@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+// MARK: - TaskDetailsViewProtocol
+protocol TaskDetailsViewProtocol: AnyObject {
+    func displayTask(_ task: Task?)
+    func close()
+}
+
+// MARK: - TaskDetailsPresenterProtocol
+protocol TaskDetailsPresenterProtocol: AnyObject {
+    func viewDidLoad()
+    func didTapBack(title: String, description: String)
+}

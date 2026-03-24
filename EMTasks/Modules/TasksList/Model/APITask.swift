@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+// MARK: - APITask
+struct APITask: Decodable {
+    let id: Int
+    let todo: String
+    let completed: Bool
+}

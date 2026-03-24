@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+// MARK: - APIResponse
+struct APIResponse: Decodable {
+    let todos: [APITask]
+}
